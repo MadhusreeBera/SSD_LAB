@@ -1,5 +1,13 @@
 #! /bin/bash
-
+if [ $# -gt 1 ]
+then
+    echo "Wrong number of inputs"
+    exit
+elif [ $# -eq 0 ]
+then
+    echo "No input given"
+    exit
+fi
 
 if [ -f $1 ]
 then
